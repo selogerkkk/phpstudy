@@ -34,6 +34,6 @@ Lembre-se de que cada solução pode ter dependências específicas, então veri
 
 ## Contato
 
-Se você tiver alguma dúvida relacionada a este repositório ou quiser bater um papo, não hesite em entrar em contato comigo pelo [email](ruanhborges@gmail.com).
+Se você tiver alguma dúvida relacionada a este repositório ou quiser bater um papo, não hesite em entrar em contato comigo pelo [email](mailto:ruanhborges@gmail.com).
 
 **Divirta-se codificando!**
