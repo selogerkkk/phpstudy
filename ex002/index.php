@@ -8,28 +8,39 @@
     <link rel="stylesheet" href="/phpstudy/style.css">
 </head>
 <section>
+    <!-- calculos -->
     <?php
-    $value1 = $_GET['valor1'] ?? 0;
-    $value2 = $_GET['valor2'] ?? 1;
-    $quociente = $value1 / $value2;
-    $resto = $value1 % $value2;
+    $dividendo = $_GET['valor1'] ?? 0;
+    $divisor = $_GET['valor2'] ?? 1;
+    $quociente = $dividendo / $divisor;
+    $resto = $dividendo % $divisor;
     ?>
     <h1>Anatomia de uma divisão</h1>
     <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
         <label for="valor1">Dividendo</label>
         <input type="number" name="valor1" value="<?php $value1 ?>">
         <label for="valor1">Divisor</label>
-        <input type="number" name="valor2" value="<?php $value2 ?>">
+        <input type="number" name="valor2" value="<?php $divisor ?>">
         <input type="submit" value="Analisar">
     </form>
 </section>
 <section>
     <h2>Estrutura da divisão:</h2>
-    <p>Dividendo: <?php echo $value1; ?><br>
-        Divisor: <?php echo $value2; ?><br>
+    <p>Dividendo: <?php echo $dividendo; ?><br>
+        Divisor: <?php echo $divisor; ?><br>
         Quociente: <?php echo $quociente ?><br>
         Resto: <?php echo $resto ?><br>
     </p>
+    <table class="divisao">
+        <tr>
+            <td><?= $dividendo ?></td>
+            <td><?= $divisor ?></td>
+        </tr>
+        <tr>
+            <td><?= $quociente ?></td>
+            <td><?= $resto ?></td>
+        </tr>
+    </table>
 </section>
 
 <body>
