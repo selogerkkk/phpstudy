@@ -18,9 +18,9 @@
     <h1>Anatomia de uma divisão</h1>
     <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
         <label for="valor1">Dividendo</label>
-        <input type="number" name="valor1" value="<?php $value1 ?>">
+        <input type="number" name="valor1" value="<?= $dividendo ?>">
         <label for="valor1">Divisor</label>
-        <input type="number" name="valor2" value="<?php $divisor ?>">
+        <input type="number" name="valor2" value="<?= $divisor ?>">
         <input type="submit" value="Analisar">
     </form>
 </section>
